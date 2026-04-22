@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@400;600;800&display=swap');
+
+:root {
+  --bg-dark: #07090b;
+  --bg-light: #111a22;
+  --neon-blue: #009cff;
+  --dim-blue: rgba(0, 156, 255, 0.15);
+  --text-main: #f0f4f8;
+  --text-muted: #8b99a5;
+  --glass-bg: rgba(30, 35, 40, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  display: block;
+}
+
+input, textarea, select {
+  min-width: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-dark);
+  /* Dark blurry wallpaper base */
+  background-image: radial-gradient(circle at 50% -20%, #172433 0%, var(--bg-dark) 80%);
+  color: var(--text-main);
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, .mono-font {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#root {
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.crt-overlay {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100vh;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.25) 50%
+  ), radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);
+  background-size: 100% 4px, 100% 100%;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.6;
+}
+
+.neon-glow {
+  box-shadow: 0 0 15px var(--dim-blue), 0 0 30px var(--dim-blue) inset;
+  border: 1px solid var(--glass-border);
+}
+
+.vhs-text {
+  color: #fff;
+  /* Cinematic VHS color bleed: cyan left, red right */
+  text-shadow: 2px 0px 4px rgba(0, 156, 255, 0.7), -2px 0px 4px rgba(255, 0, 0, 0.5);
+}
+
+@keyframes glitch {
+  0% { transform: translate(0) }
+  20% { transform: translate(-2px, 2px) }
+  40% { transform: translate(-2px, -2px) }
+  60% { transform: translate(2px, 2px) }
+  80% { transform: translate(2px, -2px) }
+  100% { transform: translate(0) }
+}
+
+.glitch-hover:hover {
+  animation: glitch 0.2s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; filter: blur(10px); }
+  to { opacity: 1; filter: blur(0); }
+}
+
+/* --- VHS BLUE EFFECTS --- */
+.vhs-blue {
+  /* Turn everything into a washed out vintage blue */
+  filter: grayscale(0.6) sepia(0.2) hue-rotate(180deg) contrast(1.1) brightness(0.85);
+}
+
+.noise-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E');
+  opacity: 0.15;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+@keyframes gridGlitch {
+  0% { transform: translate(0) scale(1) skew(0deg); filter: grayscale(0.5) sepia(0.2) hue-rotate(180deg) contrast(1.1) brightness(0.9); }
+  20% { transform: translate(-4px, 4px) scale(1.05) skew(2deg); filter: grayscale(0.5) sepia(0.2) hue-rotate(180deg) contrast(1.5) brightness(1.2); }
+  40% { transform: translate(-4px, -4px) scale(1) skew(-2deg); filter: grayscale(0.5) sepia(0.2) hue-rotate(180deg) contrast(1) brightness(0.7); }
+  60% { transform: translate(4px, 4px) scale(1.02) skew(1deg); filter: grayscale(0.5) sepia(0.2) hue-rotate(180deg) contrast(1.6) brightness(1.3); }
+  80% { transform: translate(4px, -4px) scale(1) skew(-1deg); filter: grayscale(0.5) sepia(0.2) hue-rotate(180deg) contrast(1) brightness(0.8); }
+  100% { transform: translate(0) scale(1) skew(0deg); filter: grayscale(0.5) sepia(0.2) hue-rotate(180deg) contrast(1.1) brightness(0.9); }
+}
+
+.grid-cell-glitch:hover .target-image {
+  animation: gridGlitch 0.25s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+.grid-cell-glitch:hover .grid-frame {
+  border-color: #ffffff;
+  box-shadow: 0 0 15px var(--neon-blue), 0 0 30px var(--neon-blue) inset;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+/* Contact Form Input Styles (Apple Style) */
+.form-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  color: #fff;
+  padding: 16px 20px;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.form-input::placeholder {
+  color: #86868b;
+}
+
+.action-btn {
+  transform: scale(1);
+}
+
+.action-btn:hover {
+  background: #e5e5e5 !important;
+  transform: scale(1.02);
+}
+
+.action-btn:active {
+  transform: scale(0.98);
+}
+
+/* Footer Links */
+.footer-link {
+  color: #86868b;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
