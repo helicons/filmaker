@@ -1,56 +1,125 @@
 export const gridData = [
-  { 
-    id: 201, 
-    title: 'PROJECT_ALPHA_V2', 
-    image: 'https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    client: 'CyberDyne Systems',
+  // ── VIDEOCLIPS ────────────────────────────────────────────────────────────
+  {
+    id: 1,
+    title: 'Bl0nDES — Feher G',
+    image: 'https://img.youtube.com/vi/YcEfDtnmqYg/hqdefault.jpg',
+    client: 'Feher G',
     role: 'Director / Editor',
-    description: 'A conceptual exploration of artificial intelligence overtaking an isolated server farm. Mixed media containing heavily distorted VHS overlays over crisp 4K RED footage.',
-    youtubeId: 'dQw4w9WgXcQ', 
+    description: 'Videoclip oficial para el artista Feher G.',
+    youtubeId: 'YcEfDtnmqYg',
+    reels: [],
+  },
+  {
+    id: 2,
+    title: 'TE VVS Y VIENES — SORYY',
+    image: 'https://img.youtube.com/vi/_pKQIL9TiMc/hqdefault.jpg',
+    client: 'SORYY',
+    role: 'Director / Editor',
+    description: 'Videoclip oficial para SORYY.',
+    youtubeId: '_pKQIL9TiMc',
+    reels: [],
+  },
+  {
+    id: 3,
+    title: 'YO-YO — SORYY',
+    image: 'https://img.youtube.com/vi/CCeGymreZgE/hqdefault.jpg',
+    client: 'SORYY',
+    role: 'Director / Editor',
+    description: 'Videoclip oficial para SORYY.',
+    youtubeId: 'CCeGymreZgE',
+    reels: [],
+  },
+  {
+    id: 4,
+    title: 'SiRii — SORYY | E.S.O. Vol.1',
+    image: 'https://img.youtube.com/vi/Q0fwaTSwRhY/hqdefault.jpg',
+    client: 'SORYY',
+    role: 'Director / Editor',
+    description: 'Videoclip oficial. Parte del proyecto E.S.O. Vol.1 de SORYY.',
+    youtubeId: 'Q0fwaTSwRhY',
+    reels: [],
+  },
+
+  // ── VLOGS ─────────────────────────────────────────────────────────────────
+  {
+    id: 5,
+    title: 'Me compro el coche de mis sueños (+400cv)',
+    image: 'https://img.youtube.com/vi/7GH5AukDJmA/hqdefault.jpg',
+    client: 'LIFT',
+    role: 'Director / Editor / Cámara',
+    description: 'Vlog para el canal de LIFT.',
+    youtubeId: '7GH5AukDJmA',
+    reels: [],
+  },
+  {
+    id: 6,
+    title: 'Así es ser Filmmaker y tener una Marca de Ropa',
+    image: 'https://img.youtube.com/vi/jmItx2dFNEo/hqdefault.jpg',
+    client: 'AbrahamHere',
+    role: 'Director / Editor / Guion',
+    description: 'Vlog en el canal de AbrahamHere sobre la realidad de ser filmmaker y emprendedor.',
+    youtubeId: 'jmItx2dFNEo',
+    reels: [],
+  },
+
+  // ── EDUCACIONAL ───────────────────────────────────────────────────────────
+  {
+    id: 7,
+    title: 'Introducción al Trading: Empieza Bien o Pierde Dinero',
+    image: 'https://img.youtube.com/vi/hFSmOKdXNcU/hqdefault.jpg',
+    client: 'Roots | Trading',
+    role: 'Editor / Miniaturas',
+    description: 'Video educacional para el canal de trading Roots.',
+    youtubeId: 'hFSmOKdXNcU',
+    reels: [],
+  },
+  {
+    id: 8,
+    title: 'Cómo crear una Marca Personal que No se Pueda Ignorar',
+    image: 'https://img.youtube.com/vi/vRCvwvK_piQ/hqdefault.jpg',
+    client: 'AbrahamHere',
+    role: 'Director / Editor / Guion',
+    description: 'Video educacional sobre construcción de marca personal.',
+    youtubeId: 'vRCvwvK_piQ',
+    reels: [],
+  },
+
+  // ── PROYECTOS DE MARCA ────────────────────────────────────────────────────
+  {
+    id: 9,
+    title: '@barberialdesnudo',
+    image: 'https://img.youtube.com/vi/guCCOjQ2aKs/hqdefault.jpg',
+    client: 'Barbería Al Desnudo',
+    role: 'Grabación / Edición / Branding / Estrategia',
+    description: 'Grabación y edición del Podcast, branding, miniaturas y estrategia de redes sociales. 93.9K seguidores en TikTok.',
+    youtubeId: 'guCCOjQ2aKs',
     reels: [
-      'https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=500&q=80',
-      'https://images.unsplash.com/photo-1510936111840-65e151ad71bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=500&q=80'
-    ]
+      'https://img.youtube.com/vi/d92KHXrqSx8/hqdefault.jpg',
+      'https://img.youtube.com/vi/UbbkJ6WNQ2A/hqdefault.jpg',
+    ],
   },
-  { 
-    id: 202, 
-    title: 'NIGHT_DRIVE', 
-    image: 'https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    client: 'Night Riders Indie Label',
-    role: 'DoP / Colorist',
-    description: 'Music video shot entirely on location using only available neon street light. Highly graded in DaVinci Resolve.',
-    youtubeId: 'yv_2zD4I3o0', 
+  {
+    id: 10,
+    title: '@AbrahamHere — Marca Personal',
+    image: 'https://img.youtube.com/vi/O8fC6d_QFIs/hqdefault.jpg',
+    client: 'AbrahamHere',
+    role: 'Grabación / Edición / Guion / Branding / Estrategia',
+    description: 'Gestión completa de la marca personal: grabación, edición, guionización, branding, estrategia, captación de clientes, diseño y miniaturas. 187.7K seguidores en TikTok.',
+    youtubeId: 'T5ZLnEB7Yq8',
     reels: [
-      'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=500&q=80'
-    ]
+      'https://img.youtube.com/vi/UNW1nhtvALI/hqdefault.jpg',
+      'https://img.youtube.com/vi/w7wkVtVysUk/hqdefault.jpg',
+    ],
   },
-  { 
-    id: 203, 
-    title: 'GLITCH_SEQ', 
-    image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    client: 'Personal Project',
-    role: 'Visual Artist',
-    description: 'An experiment in pure digital degradation. Creating algorithmic data moshing and artifacting via FFmpeg.',
-    youtubeId: 'J---aiyznGQ',
-    reels: []
-  },
-  { 
-    id: 204, title: 'REMOTE_FEED', image: 'https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-    description: 'Intercepted video feed test.'
-  },
-  { 
-    id: 205, title: 'SURVEILLANCE_BOT', image: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-  },
-  { 
-    id: 206, title: 'SYS_OVERRIDE', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-  },
-  { 
-    id: 207, title: 'PROTOCOL_7', image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-  },
-  { 
-    id: 208, title: 'DB_EXTRACT', image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-  },
-  { 
-    id: 209, title: 'ECHO_LOCATION', image: 'https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+  {
+    id: 11,
+    title: '@loveconceptbrand',
+    image: 'https://img.youtube.com/vi/k1qmL-VDIS4/hqdefault.jpg',
+    client: 'Love Concept Brand',
+    role: 'Branding / Diseño / Fotografía / Estrategia',
+    description: 'El proyecto que definió su carrera. Branding completo, diseño de producto, fotografía y estrategia. Winter Love Drop 2024 (agotado). 66.6K seguidores en TikTok.',
+    youtubeId: 'k1qmL-VDIS4',
+    reels: [],
   },
 ];
