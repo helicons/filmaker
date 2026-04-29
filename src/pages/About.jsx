@@ -89,7 +89,7 @@ const styles = {
     minHeight: '100vh',
     width: '100%',
     backgroundColor: '#07090b',
-    color: '#e5e5e5',
+    color: '#f5f5f7',
     fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif',
     overflowX: 'hidden',
     boxSizing: 'border-box',
@@ -126,7 +126,7 @@ const styles = {
     fontSize: 'clamp(2.5rem, 5vw, 4.5rem)',
     fontWeight: '700',
     letterSpacing: '-2px',
-    color: '#86868b',
+    color: '#a1a1a6',
     margin: '0 0 20px 0',
     fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif',
     lineHeight: '1.1',
@@ -134,7 +134,7 @@ const styles = {
   heroSub: {
     fontSize: 'clamp(1.5rem, 3vw, 2.5rem)',
     fontWeight: '600',
-    color: '#86868b',
+    color: '#a1a1a6',
     margin: '0 0 10px 0',
     opacity: 0.8,
   },
@@ -169,7 +169,7 @@ const styles = {
   paragraph: {
     fontSize: '18px',
     lineHeight: '1.6',
-    color: '#86868b',
+    color: '#a1a1a6',
     marginBottom: '24px',
   },
   skillsSection: {
@@ -226,13 +226,13 @@ const styles = {
     fontWeight: '600',
   },
   link: {
-    color: '#86868b',
+    color: '#a1a1a6',
     textDecoration: 'none',
     fontSize: '16px',
     transition: 'color 0.2s',
   },
   profilesText: {
-    color: '#86868b',
+    color: '#a1a1a6',
     fontSize: '16px',
     lineHeight: '1.6',
     margin: 0,

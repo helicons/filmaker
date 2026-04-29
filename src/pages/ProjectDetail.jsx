@@ -104,7 +104,7 @@ const styles = {
     fontSize: '15px',
     background: 'transparent',
     cursor: 'pointer',
-    color: '#86868b',
+    color: '#a1a1a6',
     fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
     transition: 'color 0.2s',
   },
@@ -132,7 +132,7 @@ const styles = {
     padding: '0',
   },
   label: {
-    color: '#86868b',
+    color: '#a1a1a6',
     margin: '0 0 8px 0',
     fontSize: '13px',
     textTransform: 'uppercase',
@@ -144,7 +144,7 @@ const styles = {
     margin: 0,
     fontSize: '16px',
     lineHeight: '1.6',
-    color: '#e5e5e5',
+    color: '#f5f5f7',
     fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
   },
   mediaCol: {

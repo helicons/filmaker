@@ -34,7 +34,7 @@ const styles = {
     margin: '0 auto',
   },
   text: {
-    color: '#86868b',
+    color: '#a1a1a6',
     fontSize: '12px',
     margin: 0,
     fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',

@@ -122,13 +122,12 @@ const styles = {
     margin: 0,
     fontSize: '8px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif',
-    color: '#fff', // Texto claro nuevamente para acoplarse al fondo oscuro
+    color: '#fff',
     fontWeight: '600',
     letterSpacing: '0.5px',
     display: 'inline-block',
     lineHeight: '1.2',
     wordBreak: 'break-word',
-    opacity: 0.8,
   }
 };
 

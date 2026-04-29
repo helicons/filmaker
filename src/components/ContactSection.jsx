@@ -50,7 +50,7 @@ const styles = {
     color: '#fff',
   },
   subtitle: {
-    color: '#86868b',
+    color: '#a1a1a6',
     fontSize: '1.1rem',
     marginBottom: '48px',
     fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif',
